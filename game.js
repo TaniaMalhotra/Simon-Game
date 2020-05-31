@@ -55,7 +55,7 @@ function nextSequence() {
   var randomNumber = Math.floor(Math.random() * 4);
   var randomChosenColour = buttonColours[randomNumber];
   gamePattern.push(randomChosenColour);
-  let timeoutDelay = 0;
+  var timeoutDelay = 0;
   gamePattern.forEach( function (PatternStep) {
     setTimeout ( () => {
       $("#" + PatternStep).fadeIn(100).fadeOut(100).fadeIn(100);
